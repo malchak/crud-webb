@@ -10,12 +10,12 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
+//= require jquery-1.9.1
 //= require jquery_ujs
 //= require twitter/bootstrap
-//= require handlebars
-//= require ember
-//= require ember-data
+//= require handlebars-1.0.0
+//= require ember-canary
+//= require ember-data-canary
 //= require_self
 //= require app
 
