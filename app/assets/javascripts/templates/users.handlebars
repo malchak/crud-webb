@@ -5,9 +5,16 @@
       <th>ID</th>
       <th>Name</th>
     </tr>
-    {{#each user in controller}}
-  		{{render "user" user}}
+    {{#each controller}}
+  		<tr>
+  			<td>{{id}}</td>
+  			<td>{{fullName}}</td>
+			</tr>
 		{{/each}}
   </table>
+</div>
+
+<div class="span9">
+	{{outlet}}
 </div>
 
