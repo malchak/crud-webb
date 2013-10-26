@@ -1,5 +1,5 @@
 App.UsersRoute = Ember.Route.extend({
 	model: function() {
-		this.get('store').findAll('user');
+		return this.get('store').findAll('user');
 	}
 });
