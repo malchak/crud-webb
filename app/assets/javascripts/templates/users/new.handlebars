@@ -1,0 +1,19 @@
+<h1>{{fullName}}</h1>
+<form>
+  <fieldset>
+    <div>
+      {{input type="text" placeholder="First Name" valueBinding="firstName" name="firstName"}}
+    </div>
+    <div>
+      {{input type="text" placeholder="Last Name" valueBinding="lastName" name="lastName"}}
+    </div>
+    <div>
+      {{input type="text" placeholder="Quote" valueBinding="quote" name="quote"}}
+    </div>
+    <button {{action 'save'}} class="btn btn-success">Save</button>
+  </fieldset>
+</form>
+<div class='page-header'></div>
+
+<a href='#' {{action cancel target='controller'}} class='btn btn-inverse'>Cancel</a>
+<h1>Test</h1>

@@ -9,6 +9,10 @@ class Api::V1::UsersController < ApplicationController
 		respond_with User.find(params[:id])
 	end
 
+	def create
+		respond_with User.create(user_params)
+	end
+	
 	private
 
 	def user_params
