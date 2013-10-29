@@ -1,0 +1,17 @@
+<h1>{{fullName}}</h1>
+<form>
+	<fieldset>
+		<div>
+			{{view Ember.TextField valueBinding="firstName" name="firstName"}}
+		</div>
+		<div>
+			{{view Ember.TextField valueBinding="lastName" name="lastName"}}
+		</div>
+		<div>
+			{{view Ember.TextArea valueBinding="quote" name="quote"}}
+		</div>
+		<button {{action save}} class="btn btn-success">Save Changes</button> <button {{action cancel target='controller'}} class="btn">Cancel</button>
+	</fieldset>
+</form>
+<div class='page-header'></div>
+
