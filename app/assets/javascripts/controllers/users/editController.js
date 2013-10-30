@@ -10,6 +10,13 @@ App.UsersEditController = Ember.ObjectController.extend({
 			var user = this.get('model');
 			user.save();
 			this.transitionToRoute('users.show', this.content);
+		},
+
+		destroy: function(){
+			var user = this.get('model');
+			user.deleteRecord();
+			user.save();
+			this.transitionToRoute('users');
 		}
 	}
 });

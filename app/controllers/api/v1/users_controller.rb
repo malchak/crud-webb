@@ -16,6 +16,10 @@ class Api::V1::UsersController < ApplicationController
 	def update
     respond_with User.update(params[:id], user_params)
   end
+
+  def destroy
+  	respond_with User.destroy(params[:id])
+  end
 	
 	private
 
