@@ -13,11 +13,9 @@ class Api::V1::UsersController < ApplicationController
 		respond_with User.create(user_params)
 	end
 
-	def edit
-		user = User.find(params[:id])
-		user.update_attributes(params[:user])
-		render json: user
-	end
+	def update
+    respond_with User.update(params[:id], user_params)
+  end
 	
 	private
 
